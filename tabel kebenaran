@@ -27,14 +27,14 @@ for P in [True, False]:
 print()
 
 # Menbuat jdul Tabel
-print("TABEL KEBENARAN NEGASI")
+print("TABEL KEBENARAN implikasi")
 print("_________________________")
 
 # #Menampilkan Header tabel
-print("P\t|Q\t|P AND Q")
+print("P\t|Q\t| not P or Q")
 print("_________________________")
 # Menggunakan Operator logika 'AND'
 for P in [True, False]:
     for Q in [True, False]:
-        negasi = not Q
-        print(f"{P}\t{Q}\t{negasi}")
+        implikasi = not P or Q
+        print(f"{P}\t{Q}\t{implikasi}")
